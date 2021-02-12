@@ -32,9 +32,9 @@ else:
 class Accelerator(object):
 
     def __init__(self,
-                 trainer: Optional = None,
-                 cluster_environment: Optional[ClusterEnvironment] = None,
-                 ddp_plugin: Optional[DDPPlugin] = None):
+                 trainer = None,
+                 cluster_environment = None,
+                 ddp_plugin = None):
         self.trainer = trainer
         self.nickname = None
         self.cluster_environment = cluster_environment

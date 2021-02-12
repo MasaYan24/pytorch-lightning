@@ -31,8 +31,8 @@ class DDPHPCAccelerator(Accelerator):
 
     def __init__(self,
                  trainer,
-                 cluster_environment: Optional[ClusterEnvironment] = None,
-                 ddp_plugin: Optional[DDPPlugin] = None):
+                 cluster_environment = None,
+                 ddp_plugin = None):
         """
         Runs training using DDP on an HPC cluster
 

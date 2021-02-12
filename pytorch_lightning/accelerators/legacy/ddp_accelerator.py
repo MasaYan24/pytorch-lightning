@@ -46,9 +46,9 @@ if _HYDRA_AVAILABLE:
 class DDPAccelerator(Accelerator):
 
     def __init__(self,
-                 trainer: Optional = None,
-                 cluster_environment: Optional[ClusterEnvironment] = None,
-                 ddp_plugin: Optional[DDPPlugin] = None):
+                 trainer = None,
+                 cluster_environment = None,
+                 ddp_plugin = None):
         """
         Runs training using DDP strategy on a single machine (manually, not via cluster start)
 

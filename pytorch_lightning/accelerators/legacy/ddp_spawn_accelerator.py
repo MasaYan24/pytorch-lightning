@@ -43,8 +43,8 @@ class DDPSpawnAccelerator(Accelerator):
     def __init__(self,
                  trainer,
                  nprocs: int,
-                 cluster_environment: Optional[ClusterEnvironment] = None,
-                 ddp_plugin: Optional[DDPPlugin] = None):
+                 cluster_environment = None,
+                 ddp_plugin = None):
         """
         Runs training using DDP using mp.spawn via manual launch (not cluster launch)
 
